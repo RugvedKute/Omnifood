@@ -61,21 +61,21 @@
     font-size: 50%;
   }
 
-
   .hero {
     grid-template-columns: 1fr;
     padding: 0 8rem;
     gap: 6.4rem;
   }
 
-  .hero-text-box, .hero-img-box {
+  .hero-text-box,
+  .hero-img-box {
     text-align: center;
   }
 
   .hero-img {
     width: 60%;
   }
- 
+
   .delivered-meals {
     justify-content: center;
     margin-top: 3.2rem;
@@ -122,7 +122,6 @@
     width: 100%;
     transform: translateX(100%);
 
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,11 +132,11 @@
     /* how to hide an element without display none */
     pointer-events: none;
     visibility: hidden;
-
   }
 
   .btn-mobile-nav {
     display: block;
+    z-index: 9999;
   }
 
   .nav-open .main-nav {
@@ -160,17 +159,13 @@
     gap: 4.8rem;
   }
 
-
   .main-nav-link:link,
   .main-nav-link:visited {
-    font-size: 3rem ;
+    font-size: 3rem;
   }
-
 }
 
-
 @media (max-width: 44em) {
-
   .grid--3-cols,
   .grid--4-cols {
     grid-template-columns: repeat(2, 1fr);
@@ -188,7 +183,8 @@
     width: 100%;
   }
 
-  .logo-col, .address-col {
+  .logo-col,
+  .address-col {
     grid-column: span 3;
   }
 
@@ -203,13 +199,10 @@
   }
 }
 
-
 @media (max-width: 34em) {
-
   .grid {
     row-gap: 4.8rem;
   }
-
 
   .grid--2-cols,
   .grid--3-cols,
@@ -221,16 +214,15 @@
     padding: 2.4rem 0 6.4rem 0;
   }
 
-
   .btn,
-.btn:link,
-.btn:visited {
-  padding: 2.4rem 1.6rem;
-}
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
 
-.hero-img {
-  width: 80%;
-}
+  .hero-img {
+    width: 80%;
+  }
 
   .hero {
     padding: 0 3.2rem;
@@ -258,7 +250,7 @@
 
   .gallery {
     grid-template-columns: repeat(4, 1fr);
-    gap: 1.2rem
+    gap: 1.2rem;
   }
 
   .cta {
